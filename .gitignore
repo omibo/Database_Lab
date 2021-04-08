@@ -14,9 +14,9 @@ node_modules/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# bundle
-packages/**/*.d.ts
-packages/**/*.js
+# # bundle
+# packages/**/*.d.ts
+# packages/**/*.js
 
 # Ignore all pages files
 *.pages

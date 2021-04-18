@@ -7,10 +7,11 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const options = new DocumentBuilder()
-    .setTitle('Cats example')
-    .setDescription('The cats API description')
+    .setTitle('Bookss example')
+    .setDescription('The books API description')
     .setVersion('1.0')
-    .addTag('cats')
+    .setContact('name: omid bodaghi','url: localhost:3000',  'email: omid.bodaghi79@gmail.com')
+    .addTag('books')
     .build();
 
   const document = SwaggerModule.createDocument(app, options);

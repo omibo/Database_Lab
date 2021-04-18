@@ -7,10 +7,11 @@ const common_1 = require("@nestjs/common");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     const options = new swagger_1.DocumentBuilder()
-        .setTitle('Cats example')
-        .setDescription('The cats API description')
+        .setTitle('Bookss example')
+        .setDescription('The books API description')
         .setVersion('1.0')
-        .addTag('cats')
+        .setContact('name: omid bodaghi', 'url: localhost:3000', 'email: omid.bodaghi79@gmail.com')
+        .addTag('books')
         .build();
     const document = swagger_1.SwaggerModule.createDocument(app, options);
     swagger_1.SwaggerModule.setup('api', app, document);

@@ -9,13 +9,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const books_service_1 = require("./books.service");
 const books_controller_1 = require("./books.controller");
+const core_1 = require("@nestjs/core");
+const jwt_auth_guard_1 = require("../auth/jwt-auth.guard");
 let BooksModule = class BooksModule {
 };
 BooksModule = __decorate([
     common_1.Module({
         imports: [],
         controllers: [books_controller_1.default],
-        providers: [books_service_1.default],
+        providers: [
+            books_service_1.default,
+            {
+                provide: core_1.APP_GUARD,
+                useClass: jwt_auth_guard_1.JwtAuthGuard,
+            }
+        ],
     })
 ], BooksModule);
 exports.default = BooksModule;

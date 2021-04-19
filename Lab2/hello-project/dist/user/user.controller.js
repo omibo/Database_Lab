@@ -17,6 +17,7 @@ const common_1 = require("@nestjs/common");
 const user_service_1 = require("./user.service");
 const create_user_dto_1 = require("./dto/create-user.dto");
 const swagger_1 = require("@nestjs/swagger");
+const custom_decorator_1 = require("../auth/custom-decorator");
 let UserController = class UserController {
     constructor(usersService) {
         this.usersService = usersService;
@@ -33,7 +34,8 @@ let UserController = class UserController {
 };
 __decorate([
     common_1.Header('Content-Type', 'application/json'),
-    swagger_1.ApiResponse({ status: 200, description: 'You add user sucessfully' }),
+    custom_decorator_1.Public(),
+    swagger_1.ApiResponse({ status: 201, description: 'You add user sucessfully' }),
     swagger_1.ApiResponse({ status: 400, description: 'Bad request!' }),
     common_1.Post('post'),
     __param(0, common_1.Body()),
@@ -44,6 +46,8 @@ __decorate([
 __decorate([
     common_1.Header('Content-Type', 'application/json'),
     swagger_1.ApiResponse({ status: 200, description: 'You get all users' }),
+    swagger_1.ApiResponse({ status: 401, description: 'You are not authorized' }),
+    swagger_1.ApiBearerAuth(),
     common_1.Get(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
@@ -52,6 +56,8 @@ __decorate([
 __decorate([
     common_1.Header('Content-Type', 'application/json'),
     swagger_1.ApiResponse({ status: 200, description: 'You get user {id} books' }),
+    swagger_1.ApiResponse({ status: 401, description: 'You are not authorized' }),
+    swagger_1.ApiBearerAuth(),
     swagger_1.ApiBody({
         description: 'Enter user id'
     }),

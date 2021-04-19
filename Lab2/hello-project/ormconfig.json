@@ -2,9 +2,9 @@
     "type": "postgres",
     "host": "localhost",
     "port": 5432,
-    "username": "todoapp1",
-    "password": "todoapp1",
-    "database": "postgres",
+    "username": "todoapp2",
+    "password": "todoapp2",
+    "database": "postgres1",
     "entities": ["dist/**/**.entity{.ts,.js}"],
     "synchronize": "true"
   }

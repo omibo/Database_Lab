@@ -14,6 +14,24 @@ class CreateUserDto {
 }
 __decorate([
     swagger_1.ApiProperty({
+        description: 'Enter your username',
+        type: String,
+        minLength: 3,
+        maxLength: 20
+    }),
+    __metadata("design:type", String)
+], CreateUserDto.prototype, "username", void 0);
+__decorate([
+    swagger_1.ApiProperty({
+        description: 'Enter your password',
+        type: String,
+        minLength: 6,
+        maxLength: 20
+    }),
+    __metadata("design:type", String)
+], CreateUserDto.prototype, "password", void 0);
+__decorate([
+    swagger_1.ApiProperty({
         description: 'Enter your name',
         type: String,
         minLength: 3,

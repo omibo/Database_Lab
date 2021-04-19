@@ -12,7 +12,9 @@ const user_entity_1 = require("../db/user.entity");
 let UserService = class UserService {
     async insert(userDetails) {
         const userEntity = user_entity_1.default.create();
-        const { name } = userDetails;
+        const { username, password, name } = userDetails;
+        userEntity.username = username;
+        userEntity.password = password;
         userEntity.name = name;
         await user_entity_1.default.save(userEntity);
         return userEntity;
@@ -20,8 +22,10 @@ let UserService = class UserService {
     async getAllUsers() {
         return await user_entity_1.default.find();
     }
+    async getUser(username) {
+        return await user_entity_1.default.findOne({ where: { username: username } });
+    }
     async getBooksOfUser(userID) {
-        console.log(typeof (userID));
         const user = await user_entity_1.default.findOne({ where: { id: userID }, relations: ['books'] });
         return user.books;
     }

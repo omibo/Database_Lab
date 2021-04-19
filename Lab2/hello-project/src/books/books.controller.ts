@@ -11,6 +11,8 @@ export default class BooksController {
   @Header('Content-Type', 'application/json')
   @ApiResponse({status:201, description: 'You add book sucessfully'})
   @ApiResponse({status:400, description: 'Bad request!'})
+  @ApiResponse({status:401, description: 'You are not authorized'})
+  @ApiBearerAuth()
   @Post('post')
   postBook( @Body() book: CreateBookDto) {
     return this.booksService.insert(book);
@@ -19,14 +21,19 @@ export default class BooksController {
   @Header('Content-Type', 'application/json')
   @ApiResponse({status:200, description: 'You update the book successfullly'})
   @ApiResponse({status:400, description: 'Wanted book does not exists'})
+  @ApiResponse({status:401, description: 'You are not authorized'})
+  @ApiBearerAuth()
   @Put('put')
   putBook( @Body() book: UpdateBookDto) {
     return this.booksService.update(book);
   }
 
+
   @Header('Content-Type', 'application/json')
   @ApiResponse({status:200, description: 'You delete the book successfullly'})
   @ApiResponse({status:400, description: 'Wanted book does not exists'})
+  @ApiResponse({status:401, description: 'You are not authorized'})
+  @ApiBearerAuth()
   @Delete('delete')
   deleteBook( @Param() bookId: number) {
     return this.booksService.delete(bookId);
@@ -34,6 +41,8 @@ export default class BooksController {
 
   @Header('Content-Type', 'application/json')
   @ApiResponse({status:200, description: 'You get all genres'})
+  @ApiResponse({status:401, description: 'You are not authorized'})
+  @ApiBearerAuth()
   @Get()
   getAll() {
     return this.booksService.getAllBooks();

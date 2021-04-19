@@ -11,6 +11,8 @@ export default class GenreController {
   @Header('Content-Type', 'application/json')
   @ApiResponse({status:200, description: 'You add genre sucessfully'})
   @ApiResponse({status:400, description: 'Bad request!'})
+  @ApiResponse({status:401, description: 'You are not authorized'})
+  @ApiBearerAuth()
   @Post('post')
   postGenre( @Body() genre: CreateGenreDto) {
     return this.genreService.insert(genre);
@@ -18,6 +20,8 @@ export default class GenreController {
 
   @Header('Content-Type', 'application/json')
   @ApiResponse({status:200, description: 'You get all genres'})
+  @ApiResponse({status:401, description: 'You are not authorized'})
+  @ApiBearerAuth()
   @Get()
   getAll() {
     return this.genreService.getAllGenre();

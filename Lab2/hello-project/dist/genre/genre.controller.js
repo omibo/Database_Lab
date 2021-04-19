@@ -31,6 +31,8 @@ __decorate([
     common_1.Header('Content-Type', 'application/json'),
     swagger_1.ApiResponse({ status: 200, description: 'You add genre sucessfully' }),
     swagger_1.ApiResponse({ status: 400, description: 'Bad request!' }),
+    swagger_1.ApiResponse({ status: 401, description: 'You are not authorized' }),
+    swagger_1.ApiBearerAuth(),
     common_1.Post('post'),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
@@ -40,6 +42,8 @@ __decorate([
 __decorate([
     common_1.Header('Content-Type', 'application/json'),
     swagger_1.ApiResponse({ status: 200, description: 'You get all genres' }),
+    swagger_1.ApiResponse({ status: 401, description: 'You are not authorized' }),
+    swagger_1.ApiBearerAuth(),
     common_1.Get(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),

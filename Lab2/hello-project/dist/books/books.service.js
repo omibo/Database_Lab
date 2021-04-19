@@ -24,6 +24,24 @@ let BooksService = class BooksService {
         await book.save();
         return book;
     }
+    async update(bookDetails) {
+        const { bookId, name, userID, genreIDs } = bookDetails;
+        const book = await book_entity_1.default.findOne(bookId);
+        book.name = name;
+        book.user = await user_entity_1.default.findOne(userID);
+        book.genres = [];
+        for (let i = 0; i < genreIDs.length; i++) {
+            const genre = await genre_entity_1.default.findOne(genreIDs[i]);
+            book.genres.push(genre);
+        }
+        await book.save();
+        return book;
+    }
+    async delete(bookId) {
+        const book = await book_entity_1.default.findOne(bookId);
+        await book.remove();
+        return book;
+    }
     async getAllBooks() {
         return book_entity_1.default.find();
     }

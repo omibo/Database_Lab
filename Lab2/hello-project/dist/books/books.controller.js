@@ -15,13 +15,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const books_service_1 = require("./books.service");
 const create_book_dto_1 = require("./dto/create-book.dto");
+const update_book_dto_1 = require("./dto/update-book.dto");
 const swagger_1 = require("@nestjs/swagger");
 let BooksController = class BooksController {
     constructor(booksService) {
         this.booksService = booksService;
     }
-    postGenre(book) {
+    postBook(book) {
         return this.booksService.insert(book);
+    }
+    putBook(book) {
+        return this.booksService.update(book);
+    }
+    deleteBook(bookId) {
+        return this.booksService.delete(bookId);
     }
     getAll() {
         return this.booksService.getAllBooks();
@@ -29,14 +36,34 @@ let BooksController = class BooksController {
 };
 __decorate([
     common_1.Header('Content-Type', 'application/json'),
-    swagger_1.ApiResponse({ status: 200, description: 'You add book sucessfully' }),
+    swagger_1.ApiResponse({ status: 201, description: 'You add book sucessfully' }),
     swagger_1.ApiResponse({ status: 400, description: 'Bad request!' }),
     common_1.Post('post'),
     __param(0, common_1.Body()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [create_book_dto_1.default]),
     __metadata("design:returntype", void 0)
-], BooksController.prototype, "postGenre", null);
+], BooksController.prototype, "postBook", null);
+__decorate([
+    common_1.Header('Content-Type', 'application/json'),
+    swagger_1.ApiResponse({ status: 200, description: 'You update the book successfullly' }),
+    swagger_1.ApiResponse({ status: 400, description: 'Wanted book does not exists' }),
+    common_1.Put('put'),
+    __param(0, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [update_book_dto_1.default]),
+    __metadata("design:returntype", void 0)
+], BooksController.prototype, "putBook", null);
+__decorate([
+    common_1.Header('Content-Type', 'application/json'),
+    swagger_1.ApiResponse({ status: 200, description: 'You delete the book successfullly' }),
+    swagger_1.ApiResponse({ status: 400, description: 'Wanted book does not exists' }),
+    common_1.Delete('delete'),
+    __param(0, common_1.Param()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number]),
+    __metadata("design:returntype", void 0)
+], BooksController.prototype, "deleteBook", null);
 __decorate([
     common_1.Header('Content-Type', 'application/json'),
     swagger_1.ApiResponse({ status: 200, description: 'You get all genres' }),

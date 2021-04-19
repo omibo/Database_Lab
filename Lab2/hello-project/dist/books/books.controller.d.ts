@@ -1,8 +1,11 @@
 import BooksService from './books.service';
 import CreateBookDto from './dto/create-book.dto';
+import UpdateBookDto from './dto/update-book.dto';
 export default class BooksController {
     private readonly booksService;
     constructor(booksService: BooksService);
-    postGenre(book: CreateBookDto): Promise<import("../db/book.entity").default>;
+    postBook(book: CreateBookDto): Promise<import("../db/book.entity").default>;
+    putBook(book: UpdateBookDto): Promise<import("../db/book.entity").default>;
+    deleteBook(bookId: number): Promise<import("../db/book.entity").default>;
     getAll(): Promise<import("../db/book.entity").default[]>;
 }

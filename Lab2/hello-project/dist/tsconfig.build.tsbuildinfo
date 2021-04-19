@@ -3106,14 +3106,19 @@
         "signature": "b3863a0ae18c8bd32d8de5f11541cedc4782e1e4457ed9484b618a845b3e0c26",
         "affectsGlobalScope": false
       },
+      "../src/books/dto/update-book.dto.ts": {
+        "version": "9da7d42c0b7a1b45e348db5955a6624ff351ca2cd46d36b0cba615da490caf84",
+        "signature": "61b609c8ceed90cfa34623cbd3f9c72cbb5e3d1569b834bb67b7ec71e318a003",
+        "affectsGlobalScope": false
+      },
       "../src/books/books.service.ts": {
-        "version": "8bf399381862d7b4099f2924adc14fbe89c31b913c2553377d366468133ef9b1",
-        "signature": "ff4119a2983ccd41fa4eb44625a35aa42303fec6dea0c4ff5cc24bd6988d85de",
+        "version": "03511ea8e8295b6934b46aec2089b69d2c1e68a8e0ef72e556e1bfd9e305eb04",
+        "signature": "b610d38cb8404eb839229b5e2cff0db14b91730e528bb0f3094811af499f8815",
         "affectsGlobalScope": false
       },
       "../src/books/books.controller.ts": {
-        "version": "6b7623551d79aa03c63a3ede7559efcfa2a7514c600dd502e2e1b344bd12cfb2",
-        "signature": "6249038f39be08589dac405c626fdab5b24c20b0064c78c5d57fa3776b66d14b",
+        "version": "b37c67ffa472c2bf7787a2b8dbc9f241f3834ef22e9f789cfaeff18c63943dac",
+        "signature": "98f90df2d78a98bd7059fe2696419bc116a53f8ee326a0d23196d8d8b301a05a",
         "affectsGlobalScope": false
       },
       "../src/books/books.module.ts": {
@@ -7580,7 +7585,8 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../src/books/books.service.ts",
-        "../src/books/dto/create-book.dto.ts"
+        "../src/books/dto/create-book.dto.ts",
+        "../src/books/dto/update-book.dto.ts"
       ],
       "../src/books/books.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7590,11 +7596,15 @@
       "../src/books/books.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/books/dto/create-book.dto.ts",
+        "../src/books/dto/update-book.dto.ts",
         "../src/db/book.entity.ts",
         "../src/db/genre.entity.ts",
         "../src/db/user.entity.ts"
       ],
       "../src/books/dto/create-book.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/books/dto/update-book.dto.ts": [
         "../node_modules/@nestjs/swagger/index.d.ts"
       ],
       "../src/db/book.entity.ts": [
@@ -10802,10 +10812,12 @@
       "../src/books/books.controller.ts": [
         "../src/books/books.service.ts",
         "../src/books/dto/create-book.dto.ts",
+        "../src/books/dto/update-book.dto.ts",
         "../src/db/book.entity.ts"
       ],
       "../src/books/books.service.ts": [
         "../src/books/dto/create-book.dto.ts",
+        "../src/books/dto/update-book.dto.ts",
         "../src/db/book.entity.ts"
       ],
       "../src/db/book.entity.ts": [
@@ -11717,6 +11729,7 @@
       "../src/books/books.module.ts",
       "../src/books/books.service.ts",
       "../src/books/dto/create-book.dto.ts",
+      "../src/books/dto/update-book.dto.ts",
       "../src/db/book.entity.ts",
       "../src/db/genre.entity.ts",
       "../src/db/user.entity.ts",

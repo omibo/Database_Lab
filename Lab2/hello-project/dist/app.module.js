@@ -10,24 +10,20 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
-const user_module_1 = require("./user/user.module");
 const typeorm_1 = require("@nestjs/typeorm");
-const auth_module_1 = require("./auth/auth.module");
+const jobseekers_module_1 = require("./jobseekers/jobseekers.module");
 const user_entity_1 = require("./db/user.entity");
-const books_module_1 = require("./books/books.module");
-const genre_module_1 = require("./genre/genre.module");
-const book_entity_1 = require("./db/book.entity");
-const genre_entity_1 = require("./db/genre.entity");
+const company_entity_1 = require("./db/company.entity");
+const project_entity_1 = require("./db/project.entity");
+const request_entity_1 = require("./db/request.entity");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [user_module_1.UserModule,
-            books_module_1.default,
-            genre_module_1.default,
-            typeorm_1.TypeOrmModule.forFeature([user_entity_1.default, book_entity_1.default, genre_entity_1.default]),
+        imports: [
+            typeorm_1.TypeOrmModule.forFeature([user_entity_1.default, company_entity_1.default, project_entity_1.default, request_entity_1.default]),
             typeorm_1.TypeOrmModule.forRoot(),
-            auth_module_1.AuthModule,
+            jobseekers_module_1.JobseekersModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

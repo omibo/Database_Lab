@@ -7,15 +7,4 @@ import { AuthGuard } from '@nestjs/passport';
 import { Public } from './auth/custom-decorator';
 
 @Controller()
-export class AppController {
-  constructor(private authService: AuthService) {}
-
-  @Header('Content-Type', 'application/json')
-  @ApiResponse({status:200, description: 'You are logged in'})
-  @Public()
-  @UseGuards(AuthGuard("local"))
-  @Post('auth/login')
-  async login(@Request() req) {
-    return this.authService.login(req.user);
-  }
-}
+export class AppController {}

@@ -3341,19 +3341,19 @@
         "signature": "1f956ff5e76bced84fffad27c121cfe12ecca23de8081c9ab9377ead7167a57d",
         "affectsGlobalScope": false
       },
-      "../src/db/genre.entity.ts": {
+      "../src/db/last/genre.entity.ts": {
         "version": "97c22e29de04d5dbacd5781d51777e5eca4df0933fcd525667f598275bb53b67",
         "signature": "bd18960056f934e7a06cc20ca21cb3c05770a2a21aa0f1b9b8942e273001b068",
         "affectsGlobalScope": false
       },
-      "../src/db/book.entity.ts": {
+      "../src/db/last/book.entity.ts": {
         "version": "e926628dd7f7443809987609d019467523ca0867bf4370f28419f1c6ad8661d8",
         "signature": "03d2922d82a14aa11efafbed7faffb19eab4bd64225e99d17c39d6ded89a2e1d",
         "affectsGlobalScope": false
       },
-      "../src/db/user.entity.ts": {
-        "version": "c2517d386af2ce11a4941b83bc3e29bcc89a1f1251d61ad108f2e6c705c86f97",
-        "signature": "ea9b0dc9f5c9211e47189c6025fb258cbb7e552d34506cf0d88d662ab303fdb0",
+      "../src/db/last/user.entity.ts": {
+        "version": "c01bd2d1c51c62c260219b1be8a8e07ef42ce014f2df022f8a79dddbcc7679db",
+        "signature": "8dd42ec61b1fce667d3886456f93e0ff000bbdfecc817027acacdeffac8f4eb2",
         "affectsGlobalScope": false
       },
       "../src/user/dto/create-user.dto.ts": {
@@ -3362,8 +3362,8 @@
         "affectsGlobalScope": false
       },
       "../src/user/user.service.ts": {
-        "version": "83514839f747185d654ec3a894674242ff74f034b57c75160c8f57bd4fd85e71",
-        "signature": "8fcbc5c0adf49ced6d92be23eb62a1773fc0cf06ef6dc0f268eb37f459ddc106",
+        "version": "c69b2e51cc33c02b5f2dfde571c4251b96a11e0187dce3fc42c98d8b7f3eedf6",
+        "signature": "fde8486de8add7c89ff79453967ea141c6df77276657f994a682a7eb7c73d32d",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -3402,7 +3402,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "ee2b4dc12f1a0962351d94a2067403f026a66461b819edefdf9836fdf9476002",
+        "version": "781de7948c125131237b87d737c2c2982cc5f3bec4e340e80cd939162e581b3d",
         "signature": "bca9de71c47a1160d843ae7e2de06575f33ed28b878f9fe50cbfc6813ad24947",
         "affectsGlobalScope": false
       },
@@ -3412,8 +3412,8 @@
         "affectsGlobalScope": false
       },
       "../src/app.controller.ts": {
-        "version": "6ba8ff24f9cbe2035dfd47eec8d83528eb477c68a9ae96045b41d153b6fb8a3e",
-        "signature": "f1ec3c1368f04a1da1c7e06dd5ddfa0dd878d41fd12d7ae1b0e49dbcf1a530fe",
+        "version": "341a3fe09ee2462f97ea2e3a640ada68f59f224e131421b57cb6dadd3e9debed",
+        "signature": "a292802277ee3066b9217d176eca4cd070e745ebe43c20e4a0ceb44c7fdf07f5",
         "affectsGlobalScope": false
       },
       "../src/app.service.ts": {
@@ -3421,9 +3421,129 @@
         "signature": "653711fba8904aa27fd8911b63cf526e7b334e13a292da4cefdbbe179ac3f3f2",
         "affectsGlobalScope": false
       },
-      "../src/user/user.controller.ts": {
-        "version": "b677febfe1db8f96b503addb5e0537f19100ae179f4adbeafeaed5c7aed4405b",
-        "signature": "f64723faf8c821143286100612317318bf9efdc2c20f52dcdbfe069fe5735ce5",
+      "../node_modules/@nestjs/typeorm/dist/interfaces/entity-class-or-schema.type.d.ts": {
+        "version": "e15db0d01139d39213a40639352debd92786f311e0421c21ac97c2ca4003a299",
+        "signature": "e15db0d01139d39213a40639352debd92786f311e0421c21ac97c2ca4003a299",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts": {
+        "version": "cd2afab7b5206a624ef3a603568ce42a7c65e7e4958f1c9518b70580523db653",
+        "signature": "cd2afab7b5206a624ef3a603568ce42a7c65e7e4958f1c9518b70580523db653",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts": {
+        "version": "2682ba5d13c2358a76e5d2a0920503226c720f502d6c5b12dde3b5bcdf7cb53c",
+        "signature": "2682ba5d13c2358a76e5d2a0920503226c720f502d6c5b12dde3b5bcdf7cb53c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/typeorm/dist/common/index.d.ts": {
+        "version": "9a7638d62db8cfa1466093d7d413fdf85c5e4a7c663ed76f2bfc8739c8e01505",
+        "signature": "9a7638d62db8cfa1466093d7d413fdf85c5e4a7c663ed76f2bfc8739c8e01505",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts": {
+        "version": "67c2337be292ac0b1efd7795b957c1c25cd074ddfe814c36c650ffdaf267750f",
+        "signature": "67c2337be292ac0b1efd7795b957c1c25cd074ddfe814c36c650ffdaf267750f",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/typeorm/dist/interfaces/index.d.ts": {
+        "version": "c338859b98f8a11f80e3e47e33767299e7a4facdf0870c01c8694fa8fa048d16",
+        "signature": "c338859b98f8a11f80e3e47e33767299e7a4facdf0870c01c8694fa8fa048d16",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts": {
+        "version": "506ddc141d91c4155d39ce3125a92b4636ed10db070c0cfdac7e54376178c30c",
+        "signature": "506ddc141d91c4155d39ce3125a92b4636ed10db070c0cfdac7e54376178c30c",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/typeorm/dist/index.d.ts": {
+        "version": "b113e9770d5be136c5e2add9e6cdf40d85051762ff2391f71d552975e66b1500",
+        "signature": "b113e9770d5be136c5e2add9e6cdf40d85051762ff2391f71d552975e66b1500",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/typeorm/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "affectsGlobalScope": false
+      },
+      "../src/db/project.entity.ts": {
+        "version": "264ec216c9710c90ea012cb938879182d5de8e361195c494f5e5f2aab10b9e1d",
+        "signature": "4437fb878d124056c11d928dabdefe0e8a00386984fa086304d18d889b2c640a",
+        "affectsGlobalScope": false
+      },
+      "../src/db/request.entity.ts": {
+        "version": "afb60273f4ee24e12bf518b25816178c3b2ad412aa3ecbeb799bb8b50d1e37c3",
+        "signature": "eec3b5e717d5b2f96237af7c9638ad7187fb42d36884c9745ca6d5546ff4d83b",
+        "affectsGlobalScope": false
+      },
+      "../src/db/user.entity.ts": {
+        "version": "f55586167d2f130c8df7633b1ed6b98f784ed4b551b8f0842359700a543404d6",
+        "signature": "2b29243b16687d57463dfa3d18472ae055a6f6efa5596c6d09fa75e6e3eb65b4",
+        "affectsGlobalScope": false
+      },
+      "../src/db/company.entity.ts": {
+        "version": "04f077d0ff7b711e568447b11e6ef8d1d32542be7b5e966a958ee5ed4b6e4c4c",
+        "signature": "781bba5728c57b0129c8be06b3a4b29df559fa3c56c71982418e787f97be2a20",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/dto/create-user.dto.ts": {
+        "version": "cdeca357a343b8a4602e86c4183e8473e8e1ff9abb2f81067fdfe3603fe4cf2b",
+        "signature": "9c463768a80af2e958f6dfa95a1d98dff922635b2fe452fbe11ce50fcbc036a4",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/dto/create-company.dto.ts": {
+        "version": "64354cb66755aae6dfa6d7c4b78570390e6f285a6ac1f8eec77f23c71f1c2f32",
+        "signature": "4881b2a58aadf6f70b9c8767aa6c82abf089d78e29eb8db956d06d4b4e686dc5",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/dto/edit-company.dto.ts": {
+        "version": "64331e31b1ba5f1478c69966ad01ed89150bcd86658f011de618367461688d50",
+        "signature": "9baffc1514ae835d2c604d4eb0b7a04e98201a26a5bd1007a613efc711e7c29a",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/dto/create-project.dto.ts": {
+        "version": "55103e6ffcd2241f69e8cf4672086aa5b6c10de76cf66dfd9fad0a2580e05f1c",
+        "signature": "4460f739389bc76569701ce1de5450c316bc481c8d58a207f1b14c8be4e2e68f",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/dto/edit-project.dto.ts": {
+        "version": "e4653abfcec621ff3a918b02e1a18d14000569bb8affde48da3b638547e2fc1b",
+        "signature": "a87434a4ce06441869f096c56c60a96bba37a2bfc616726c2c55de14eb17bfd7",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/dto/edit-user.dto.ts": {
+        "version": "25a48984977cd14b36fb42c470bb96b43c4c4fe513642bf08fa14bd20d540b90",
+        "signature": "2f739d860ab5951fe82359538a5f37945bf0aec63644eb33eb8896a2cb686f34",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/dto/create-requestl.dto.ts": {
+        "version": "fa7008dce661dde21614c6d2530f8abb397b4f7e89c0ac2a832001c2298e48e1",
+        "signature": "25cea0ae95faaa7fdef483c191192eaeef80b6b9aa1443202e8e85d6ece46e71",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/dto/edit-request.dto.ts": {
+        "version": "71e7a15bdfbaf838bd4af3b675779c28f355fdf4aa876b1a6225fb291c3f42c0",
+        "signature": "56900083a6de73ddf0951b09d2c9d61f7d920407fe3fb81f6f5ecb382b1ed233",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/jobseekers.service.ts": {
+        "version": "539b6510fdf1669f8d999abdbeaeee67ce4f1784b09e04292c7c8ce4b76e10aa",
+        "signature": "feba7ad37bfe7f28777a0ba174fe537f2b39ba54c05beb5bda3e129c1a666a35",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/jobseekers.controller.ts": {
+        "version": "4d0c065058d4fb24ba8c616adb66b4f17fea547baa4836416d3f3e2533ed5839",
+        "signature": "a45a2d5fbf135e20d1cf9fd70bb24eec6902c91e6e317e45583f405fe8490297",
+        "affectsGlobalScope": false
+      },
+      "../src/jobseekers/jobseekers.module.ts": {
+        "version": "5534beeed258c39104eaf94ca396f2731307dc7c09092a83bce6ebf082a53c03",
+        "signature": "21d6b3fc063e65066d7a68b7c38ede3dd3f8b49ae8aa59b1b5f4e38f60376ad3",
+        "affectsGlobalScope": false
+      },
+      "../src/app.module.ts": {
+        "version": "94807f44687d928ecc3f52e8fcc4fc8975e2ca6a2970993c2b47be3db672cbde",
+        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -3606,59 +3726,9 @@
         "signature": "7b5ed961a0e03965299591d73de8b8c41e8a68105ff4fc07a240b0dfb94a5a3d",
         "affectsGlobalScope": false
       },
-      "../src/auth/jwt-auth.guard.ts": {
-        "version": "5896075f12d08402d440136e1d2368f14a2088c805d9c9494bacb7f5228529f5",
-        "signature": "30fc990fae3df15b0704c1f51b5b7ea935500bcb689a7059618a86738a5954c3",
-        "affectsGlobalScope": false
-      },
-      "../src/user/user.module.ts": {
-        "version": "eb400e2a4c8353f2a92bd4cc7c1c8510cd57dbc330cf17edf3958c3a7e004529",
-        "signature": "482b8f0d35a3d453500a15b6c6057c1e4c40baa4329b39da9e1026d8e1de4329",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/dist/interfaces/entity-class-or-schema.type.d.ts": {
-        "version": "e15db0d01139d39213a40639352debd92786f311e0421c21ac97c2ca4003a299",
-        "signature": "e15db0d01139d39213a40639352debd92786f311e0421c21ac97c2ca4003a299",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts": {
-        "version": "cd2afab7b5206a624ef3a603568ce42a7c65e7e4958f1c9518b70580523db653",
-        "signature": "cd2afab7b5206a624ef3a603568ce42a7c65e7e4958f1c9518b70580523db653",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts": {
-        "version": "2682ba5d13c2358a76e5d2a0920503226c720f502d6c5b12dde3b5bcdf7cb53c",
-        "signature": "2682ba5d13c2358a76e5d2a0920503226c720f502d6c5b12dde3b5bcdf7cb53c",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/dist/common/index.d.ts": {
-        "version": "9a7638d62db8cfa1466093d7d413fdf85c5e4a7c663ed76f2bfc8739c8e01505",
-        "signature": "9a7638d62db8cfa1466093d7d413fdf85c5e4a7c663ed76f2bfc8739c8e01505",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/dist/interfaces/typeorm-options.interface.d.ts": {
-        "version": "67c2337be292ac0b1efd7795b957c1c25cd074ddfe814c36c650ffdaf267750f",
-        "signature": "67c2337be292ac0b1efd7795b957c1c25cd074ddfe814c36c650ffdaf267750f",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/dist/interfaces/index.d.ts": {
-        "version": "c338859b98f8a11f80e3e47e33767299e7a4facdf0870c01c8694fa8fa048d16",
-        "signature": "c338859b98f8a11f80e3e47e33767299e7a4facdf0870c01c8694fa8fa048d16",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/dist/typeorm.module.d.ts": {
-        "version": "506ddc141d91c4155d39ce3125a92b4636ed10db070c0cfdac7e54376178c30c",
-        "signature": "506ddc141d91c4155d39ce3125a92b4636ed10db070c0cfdac7e54376178c30c",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/dist/index.d.ts": {
-        "version": "b113e9770d5be136c5e2add9e6cdf40d85051762ff2391f71d552975e66b1500",
-        "signature": "b113e9770d5be136c5e2add9e6cdf40d85051762ff2391f71d552975e66b1500",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@nestjs/typeorm/index.d.ts": {
-        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
-        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+      "../src/main.ts": {
+        "version": "9a9547e7a475c0b275ff2ad1b05eadfd1d859bf44a7c2df1f9d8e86156d42674",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "../src/auth/local.strategy.ts": {
@@ -3686,6 +3756,21 @@
         "signature": "e3e047e8cb263193af5ebae4c6030f0ddb84e6b3c6f8c8be3413ceae2c89969a",
         "affectsGlobalScope": false
       },
+      "../src/user/user.controller.ts": {
+        "version": "b677febfe1db8f96b503addb5e0537f19100ae179f4adbeafeaed5c7aed4405b",
+        "signature": "d412dee5dbe37902f8e0074605a41bf8e525a7374be889b667f5254222d51784",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/jwt-auth.guard.ts": {
+        "version": "5896075f12d08402d440136e1d2368f14a2088c805d9c9494bacb7f5228529f5",
+        "signature": "30fc990fae3df15b0704c1f51b5b7ea935500bcb689a7059618a86738a5954c3",
+        "affectsGlobalScope": false
+      },
+      "../src/user/user.module.ts": {
+        "version": "eb400e2a4c8353f2a92bd4cc7c1c8510cd57dbc330cf17edf3958c3a7e004529",
+        "signature": "482b8f0d35a3d453500a15b6c6057c1e4c40baa4329b39da9e1026d8e1de4329",
+        "affectsGlobalScope": false
+      },
       "../src/auth/auth.module.ts": {
         "version": "d123ada603eced4f20de5acfb2268984c1a5da09110905d194b2babb39c97eb6",
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
@@ -3702,13 +3787,13 @@
         "affectsGlobalScope": false
       },
       "../src/books/books.service.ts": {
-        "version": "03511ea8e8295b6934b46aec2089b69d2c1e68a8e0ef72e556e1bfd9e305eb04",
-        "signature": "b610d38cb8404eb839229b5e2cff0db14b91730e528bb0f3094811af499f8815",
+        "version": "e955f660aae151e13e9bf02e9b2ed87b97938e54f804ad0074227c120d19fb30",
+        "signature": "5c216fc447135fe2f066390c81e9df846d90a6f7ed0148a064859ef6f7dd9186",
         "affectsGlobalScope": false
       },
       "../src/books/books.controller.ts": {
         "version": "315d6429a8538f5357aee7a69c5bc7d521f909bb4e27c7208f74a90b26f3dc10",
-        "signature": "98f90df2d78a98bd7059fe2696419bc116a53f8ee326a0d23196d8d8b301a05a",
+        "signature": "e9068772c30b8aaa8ad100f96c385b6ae039991ff33a88ebb86ec8e530d4a636",
         "affectsGlobalScope": false
       },
       "../src/books/books.module.ts": {
@@ -3722,28 +3807,18 @@
         "affectsGlobalScope": false
       },
       "../src/genre/genre.service.ts": {
-        "version": "938b6f6381bc23c87b3d4bdf7d19717a8ee75c0806900283a16c2a3156223ea2",
-        "signature": "5885f9b50778f18a8958427dd12a701bf20c42178287b0ef7c9fcec013485a10",
+        "version": "b1ee006a4a9acb7d78dd94a3f9d9c6c2076108355cfdf28f0b7b11b4e937e0f4",
+        "signature": "4f114e308af06f35d95d7d182a519510fa18a9bbfe432419a4f743682a7fdffd",
         "affectsGlobalScope": false
       },
       "../src/genre/genre.controller.ts": {
         "version": "0c90acfb8b13fe86295f2ead4d86eb7e8b73c32037a0b4648780f63b460a2199",
-        "signature": "83baf84473c9ff5056c2b66ce51812f64106b9e65c3923fb0a7dd12f6aee33ff",
+        "signature": "108cf5899c1b646349f3aa925d5c71e4033299ca576e08e1b18193e83e8f14ee",
         "affectsGlobalScope": false
       },
       "../src/genre/genre.module.ts": {
         "version": "014b321c4b27f5357666d9e920df16bb36f69020687c60d0fa3d16454de4f0a8",
         "signature": "f707e8df042416b6198e077f89f5f3e2e7b4c95721adecaccb59abe19c791f43",
-        "affectsGlobalScope": false
-      },
-      "../src/app.module.ts": {
-        "version": "72dc6a08c09792da9d4b0fecacf6e4ce5c0be4888e8e3cf3b6a141958029f36e",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
-        "affectsGlobalScope": false
-      },
-      "../src/main.ts": {
-        "version": "9a9547e7a475c0b275ff2ad1b05eadfd1d859bf44a7c2df1f9d8e86156d42674",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "../node_modules/class-validator/types/validation/ValidationError.d.ts": {
@@ -7789,13 +7864,11 @@
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
-        "../src/auth/auth.module.ts",
-        "../src/books/books.module.ts",
-        "../src/db/book.entity.ts",
-        "../src/db/genre.entity.ts",
+        "../src/db/company.entity.ts",
+        "../src/db/project.entity.ts",
+        "../src/db/request.entity.ts",
         "../src/db/user.entity.ts",
-        "../src/genre/genre.module.ts",
-        "../src/user/user.module.ts"
+        "../src/jobseekers/jobseekers.module.ts"
       ],
       "../src/app.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts"
@@ -7858,9 +7931,9 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/books/dto/create-book.dto.ts",
         "../src/books/dto/update-book.dto.ts",
-        "../src/db/book.entity.ts",
-        "../src/db/genre.entity.ts",
-        "../src/db/user.entity.ts"
+        "../src/db/last/book.entity.ts",
+        "../src/db/last/genre.entity.ts",
+        "../src/db/last/user.entity.ts"
       ],
       "../src/books/dto/create-book.dto.ts": [
         "../node_modules/@nestjs/swagger/index.d.ts"
@@ -7868,17 +7941,35 @@
       "../src/books/dto/update-book.dto.ts": [
         "../node_modules/@nestjs/swagger/index.d.ts"
       ],
-      "../src/db/book.entity.ts": [
+      "../src/db/company.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/db/genre.entity.ts",
         "../src/db/user.entity.ts"
       ],
-      "../src/db/genre.entity.ts": [
+      "../src/db/last/book.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/last/genre.entity.ts",
+        "../src/db/last/user.entity.ts"
+      ],
+      "../src/db/last/genre.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/db/last/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/last/book.entity.ts"
+      ],
+      "../src/db/project.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/user.entity.ts"
+      ],
+      "../src/db/request.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/user.entity.ts"
       ],
       "../src/db/user.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/db/book.entity.ts"
+        "../src/db/company.entity.ts",
+        "../src/db/project.entity.ts",
+        "../src/db/request.entity.ts"
       ],
       "../src/genre/dto/create-genre.dto.ts": [
         "../node_modules/@nestjs/swagger/index.d.ts"
@@ -7898,7 +7989,7 @@
       ],
       "../src/genre/genre.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/db/genre.entity.ts",
+        "../src/db/last/genre.entity.ts",
         "../src/genre/dto/create-genre.dto.ts"
       ],
       "../src/hello/dto/person.dto.ts": [
@@ -7919,6 +8010,63 @@
       "../src/hello/hello.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/hello/dto/person.dto.ts"
+      ],
+      "../src/jobseekers/dto/create-company.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/jobseekers/dto/create-project.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/jobseekers/dto/create-requestl.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/jobseekers/dto/create-user.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/jobseekers/dto/edit-company.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/jobseekers/dto/edit-project.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/jobseekers/dto/edit-request.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/jobseekers/dto/edit-user.dto.ts": [
+        "../node_modules/@nestjs/swagger/index.d.ts"
+      ],
+      "../src/jobseekers/jobseekers.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../src/jobseekers/dto/create-company.dto.ts",
+        "../src/jobseekers/dto/create-project.dto.ts",
+        "../src/jobseekers/dto/create-requestl.dto.ts",
+        "../src/jobseekers/dto/create-user.dto.ts",
+        "../src/jobseekers/dto/edit-company.dto.ts",
+        "../src/jobseekers/dto/edit-project.dto.ts",
+        "../src/jobseekers/dto/edit-request.dto.ts",
+        "../src/jobseekers/dto/edit-user.dto.ts",
+        "../src/jobseekers/jobseekers.service.ts"
+      ],
+      "../src/jobseekers/jobseekers.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/jobseekers/jobseekers.controller.ts",
+        "../src/jobseekers/jobseekers.service.ts"
+      ],
+      "../src/jobseekers/jobseekers.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/db/company.entity.ts",
+        "../src/db/project.entity.ts",
+        "../src/db/request.entity.ts",
+        "../src/db/user.entity.ts",
+        "../src/jobseekers/dto/create-company.dto.ts",
+        "../src/jobseekers/dto/create-project.dto.ts",
+        "../src/jobseekers/dto/create-requestl.dto.ts",
+        "../src/jobseekers/dto/create-user.dto.ts",
+        "../src/jobseekers/dto/edit-company.dto.ts",
+        "../src/jobseekers/dto/edit-project.dto.ts",
+        "../src/jobseekers/dto/edit-request.dto.ts",
+        "../src/jobseekers/dto/edit-user.dto.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -7947,8 +8095,8 @@
       "../src/user/user.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/db/book.entity.ts",
-        "../src/db/user.entity.ts",
+        "../src/db/last/book.entity.ts",
+        "../src/db/last/user.entity.ts",
         "../src/user/dto/create-user.dto.ts"
       ]
     },
@@ -11147,9 +11295,6 @@
         "../node_modules/typeorm/metadata/RelationMetadata.d.ts",
         "../node_modules/typeorm/query-runner/QueryRunner.d.ts"
       ],
-      "../src/app.controller.ts": [
-        "../src/auth/auth.service.ts"
-      ],
       "../src/auth/auth.service.ts": [
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../src/user/user.service.ts"
@@ -11176,32 +11321,49 @@
         "../src/books/books.service.ts",
         "../src/books/dto/create-book.dto.ts",
         "../src/books/dto/update-book.dto.ts",
-        "../src/db/book.entity.ts"
+        "../src/db/last/book.entity.ts"
       ],
       "../src/books/books.service.ts": [
         "../src/books/dto/create-book.dto.ts",
         "../src/books/dto/update-book.dto.ts",
-        "../src/db/book.entity.ts"
+        "../src/db/last/book.entity.ts"
       ],
-      "../src/db/book.entity.ts": [
+      "../src/db/company.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/db/genre.entity.ts",
         "../src/db/user.entity.ts"
       ],
-      "../src/db/genre.entity.ts": [
+      "../src/db/last/book.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/last/genre.entity.ts",
+        "../src/db/last/user.entity.ts"
+      ],
+      "../src/db/last/genre.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/db/last/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/last/book.entity.ts"
+      ],
+      "../src/db/project.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/user.entity.ts"
+      ],
+      "../src/db/request.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/db/user.entity.ts"
       ],
       "../src/db/user.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/db/book.entity.ts"
+        "../src/db/company.entity.ts",
+        "../src/db/project.entity.ts"
       ],
       "../src/genre/genre.controller.ts": [
-        "../src/db/genre.entity.ts",
+        "../src/db/last/genre.entity.ts",
         "../src/genre/dto/create-genre.dto.ts",
         "../src/genre/genre.service.ts"
       ],
       "../src/genre/genre.service.ts": [
-        "../src/db/genre.entity.ts",
+        "../src/db/last/genre.entity.ts",
         "../src/genre/dto/create-genre.dto.ts"
       ],
       "../src/hello/hello.controller.ts": [
@@ -11211,15 +11373,44 @@
       "../src/hello/hello.service.ts": [
         "../src/hello/dto/person.dto.ts"
       ],
-      "../src/user/user.controller.ts": [
-        "../src/db/book.entity.ts",
+      "../src/jobseekers/jobseekers.controller.ts": [
+        "../src/db/company.entity.ts",
+        "../src/db/project.entity.ts",
+        "../src/db/request.entity.ts",
         "../src/db/user.entity.ts",
+        "../src/jobseekers/dto/create-company.dto.ts",
+        "../src/jobseekers/dto/create-project.dto.ts",
+        "../src/jobseekers/dto/create-requestl.dto.ts",
+        "../src/jobseekers/dto/create-user.dto.ts",
+        "../src/jobseekers/dto/edit-company.dto.ts",
+        "../src/jobseekers/dto/edit-project.dto.ts",
+        "../src/jobseekers/dto/edit-request.dto.ts",
+        "../src/jobseekers/dto/edit-user.dto.ts",
+        "../src/jobseekers/jobseekers.service.ts"
+      ],
+      "../src/jobseekers/jobseekers.service.ts": [
+        "../src/db/company.entity.ts",
+        "../src/db/project.entity.ts",
+        "../src/db/request.entity.ts",
+        "../src/db/user.entity.ts",
+        "../src/jobseekers/dto/create-company.dto.ts",
+        "../src/jobseekers/dto/create-project.dto.ts",
+        "../src/jobseekers/dto/create-requestl.dto.ts",
+        "../src/jobseekers/dto/create-user.dto.ts",
+        "../src/jobseekers/dto/edit-company.dto.ts",
+        "../src/jobseekers/dto/edit-project.dto.ts",
+        "../src/jobseekers/dto/edit-request.dto.ts",
+        "../src/jobseekers/dto/edit-user.dto.ts"
+      ],
+      "../src/user/user.controller.ts": [
+        "../src/db/last/book.entity.ts",
+        "../src/db/last/user.entity.ts",
         "../src/user/dto/create-user.dto.ts",
         "../src/user/user.service.ts"
       ],
       "../src/user/user.service.ts": [
-        "../src/db/book.entity.ts",
-        "../src/db/user.entity.ts",
+        "../src/db/last/book.entity.ts",
+        "../src/db/last/user.entity.ts",
         "../src/user/dto/create-user.dto.ts"
       ]
     },
@@ -12121,8 +12312,12 @@
       "../src/books/books.service.ts",
       "../src/books/dto/create-book.dto.ts",
       "../src/books/dto/update-book.dto.ts",
-      "../src/db/book.entity.ts",
-      "../src/db/genre.entity.ts",
+      "../src/db/company.entity.ts",
+      "../src/db/last/book.entity.ts",
+      "../src/db/last/genre.entity.ts",
+      "../src/db/last/user.entity.ts",
+      "../src/db/project.entity.ts",
+      "../src/db/request.entity.ts",
       "../src/db/user.entity.ts",
       "../src/genre/dto/create-genre.dto.ts",
       "../src/genre/genre.controller.ts",
@@ -12132,6 +12327,17 @@
       "../src/hello/hello.controller.ts",
       "../src/hello/hello.module.ts",
       "../src/hello/hello.service.ts",
+      "../src/jobseekers/dto/create-company.dto.ts",
+      "../src/jobseekers/dto/create-project.dto.ts",
+      "../src/jobseekers/dto/create-requestl.dto.ts",
+      "../src/jobseekers/dto/create-user.dto.ts",
+      "../src/jobseekers/dto/edit-company.dto.ts",
+      "../src/jobseekers/dto/edit-project.dto.ts",
+      "../src/jobseekers/dto/edit-request.dto.ts",
+      "../src/jobseekers/dto/edit-user.dto.ts",
+      "../src/jobseekers/jobseekers.controller.ts",
+      "../src/jobseekers/jobseekers.module.ts",
+      "../src/jobseekers/jobseekers.service.ts",
       "../src/main.ts",
       "../src/user/dto/create-user.dto.ts",
       "../src/user/user.controller.ts",

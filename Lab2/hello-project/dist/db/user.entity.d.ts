@@ -1,9 +1,13 @@
 import { BaseEntity } from 'typeorm';
-import BookEntity from './book.entity';
+import CompanyEntity from './company.entity';
+import ProjectEntity from './project.entity';
 export default class UserEntity extends BaseEntity {
-    id: number;
     username: string;
+    firstname: string;
+    lastname: string;
+    email: string;
     password: string;
-    name: string;
-    books: BookEntity[];
+    companyEntity: CompanyEntity;
+    projects: ProjectEntity[];
+    requests: ProjectEntity[];
 }

@@ -1,4 +1,4 @@
-import BookEntity from '../db/book.entity';
+import BookEntity from '../db/last/book.entity';
 import CreateBookDto from './dto/create-book.dto';
 import UpdateBookDto from './dto/update-book.dto';
 export default class BooksService {

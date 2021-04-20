@@ -1,0 +1,30 @@
+import CompanyEntity from 'src/db/company.entity';
+import UserEntity from '../db/user.entity';
+import CreateUserDto from './dto/create-user.dto';
+import CreateCompanyDto from './dto/create-company.dto';
+import EditCompanyDto from './dto/edit-company.dto';
+import CreateProjectDto from './dto/create-project.dto';
+import ProjectEntity from 'src/db/project.entity';
+import EditProjectDto from './dto/edit-project.dto';
+import EditUserDto from './dto/edit-user.dto';
+import RequestEntity from 'src/db/request.entity';
+import CreateRequestDto from './dto/create-requestl.dto';
+import EditRequestDto from './dto/edit-request.dto';
+export declare class JobseekersService {
+    getUser(username: string): Promise<UserEntity>;
+    insertUser(userDetails: CreateUserDto): Promise<UserEntity>;
+    editUser(username: string, newUser: EditUserDto): Promise<UserEntity>;
+    deleteUser(username: string): Promise<UserEntity>;
+    getCompany(username: string): Promise<CompanyEntity>;
+    insertCompany(username: string, company: CreateCompanyDto): Promise<CompanyEntity>;
+    editCompany(username: string, company: EditCompanyDto): Promise<CompanyEntity>;
+    deleteCompany(username: string): Promise<CompanyEntity>;
+    getProject(username: string, projectId: number): Promise<ProjectEntity>;
+    insertProject(username: string, project: CreateProjectDto): Promise<ProjectEntity>;
+    editProject(username: string, pid: number, project: EditProjectDto): Promise<ProjectEntity>;
+    deleteProject(username: string, pid: number): Promise<ProjectEntity>;
+    getRequest(username: string, requestId: number): Promise<RequestEntity>;
+    insertRequest(username: string, request: CreateRequestDto): Promise<RequestEntity>;
+    editRequest(username: string, rid: number, request: EditRequestDto): Promise<RequestEntity>;
+    deleteRequest(username: string, pid: number): Promise<RequestEntity>;
+}

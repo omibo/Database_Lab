@@ -6,10 +6,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const book_entity_1 = require("../db/book.entity");
-const user_entity_1 = require("../db/user.entity");
+const book_entity_1 = require("../db/last/book.entity");
+const user_entity_1 = require("../db/last/user.entity");
 const common_1 = require("@nestjs/common");
-const genre_entity_1 = require("../db/genre.entity");
+const genre_entity_1 = require("../db/last/genre.entity");
 let BooksService = class BooksService {
     async insert(bookDetails) {
         const { name, userID, genreIDs } = bookDetails;

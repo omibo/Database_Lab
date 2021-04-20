@@ -1,9 +1,9 @@
-import BookEntity from '../db/book.entity';
+import BookEntity from '../db/last/book.entity';
 import CreateBookDto from './dto/create-book.dto';
 import UpdateBookDto from './dto/update-book.dto';
-import UserEntity from '../db/user.entity';
+import UserEntity from '../db/last/user.entity';
 import { Injectable } from '@nestjs/common';
-import GenreEntity from '../db/genre.entity';
+import GenreEntity from '../db/last/genre.entity';
 
 @Injectable()
 export default class BooksService {

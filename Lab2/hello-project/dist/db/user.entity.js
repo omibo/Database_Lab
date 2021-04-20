@@ -10,29 +10,43 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
-const book_entity_1 = require("./book.entity");
+const company_entity_1 = require("./company.entity");
+const project_entity_1 = require("./project.entity");
+const request_entity_1 = require("./request.entity");
 let UserEntity = class UserEntity extends typeorm_1.BaseEntity {
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn(),
-    __metadata("design:type", Number)
-], UserEntity.prototype, "id", void 0);
-__decorate([
-    typeorm_1.Column({ length: 500 }),
+    typeorm_1.PrimaryColumn({ length: 20 }),
     __metadata("design:type", String)
 ], UserEntity.prototype, "username", void 0);
 __decorate([
-    typeorm_1.Column({ length: 500 }),
+    typeorm_1.Column({ length: 20 }),
+    __metadata("design:type", String)
+], UserEntity.prototype, "firstname", void 0);
+__decorate([
+    typeorm_1.Column({ length: 20 }),
+    __metadata("design:type", String)
+], UserEntity.prototype, "lastname", void 0);
+__decorate([
+    typeorm_1.Column({ length: 20 }),
+    __metadata("design:type", String)
+], UserEntity.prototype, "email", void 0);
+__decorate([
+    typeorm_1.Column({ length: 20 }),
     __metadata("design:type", String)
 ], UserEntity.prototype, "password", void 0);
 __decorate([
-    typeorm_1.Column({ length: 500 }),
-    __metadata("design:type", String)
-], UserEntity.prototype, "name", void 0);
+    typeorm_1.OneToOne(() => company_entity_1.default, companyEntity => companyEntity.userEntity),
+    __metadata("design:type", company_entity_1.default)
+], UserEntity.prototype, "companyEntity", void 0);
 __decorate([
-    typeorm_1.OneToMany(type => book_entity_1.default, book => book.user),
+    typeorm_1.OneToMany(type => project_entity_1.default, project => project.user),
     __metadata("design:type", Array)
-], UserEntity.prototype, "books", void 0);
+], UserEntity.prototype, "projects", void 0);
+__decorate([
+    typeorm_1.OneToMany(type => request_entity_1.default, request => request.user),
+    __metadata("design:type", Array)
+], UserEntity.prototype, "requests", void 0);
 UserEntity = __decorate([
     typeorm_1.Entity()
 ], UserEntity);

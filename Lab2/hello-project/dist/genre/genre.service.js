@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-const genre_entity_1 = require("../db/genre.entity");
+const genre_entity_1 = require("../db/last/genre.entity");
 let GenreService = class GenreService {
     async insert(genreDetails) {
         const genreEntity = genre_entity_1.default.create();

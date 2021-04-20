@@ -1,22 +1,33 @@
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany } from 'typeorm';
-import BookEntity from './book.entity';
+import { Entity, PrimaryColumn, Column, BaseEntity, OneToOne, OneToMany, ManyToMany, JoinTable } from 'typeorm';
+import CompanyEntity from './company.entity';
+import ProjectEntity from './project.entity';
+import RequestEntity from './request.entity';
+import SkillEntity from './request.entity';
 
 @Entity()
 export default class UserEntity extends BaseEntity {
 
-  @PrimaryGeneratedColumn()
-  id: number;
-
-  @Column({ length: 500 })
+  @PrimaryColumn({ length: 20 })
   username: string;
 
-  @Column({ length: 500 })
+  @Column({ length: 20 })
+  firstname: string;
+
+  @Column({ length: 20 })
+  lastname: string;
+
+  @Column({ length: 20 })
+  email: string;
+
+  @Column({ length: 20 })
   password: string;
 
-  @Column({ length: 500 })
-  name: string;
+  @OneToOne(() => CompanyEntity, companyEntity => companyEntity.userEntity)
+  companyEntity: CompanyEntity;
 
-  // 1:n relation with bookEntity 
-  @OneToMany( type => BookEntity , book => book.user)
-  books: BookEntity[];
+  @OneToMany(type => ProjectEntity, project => project.user)
+  projects: ProjectEntity[];
+
+  @OneToMany(type => RequestEntity, request => request.user)
+  requests: ProjectEntity[];
 }
